@@ -1,0 +1,294 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Segoe UI', Arial;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    background: url('./assets/finalLogin.png') center no-repeat;
+}
+
+
+
+
+.login-form {
+    display: grid;
+    margin: 30px;
+
+}
+
+#title {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+label {
+    text-align: left;
+    margin-top: 50px;
+    font-size: 16px;
+
+}
+
+input {
+    margin-top: 12px;
+    background-color: rgba(234, 244, 255, 1);
+    border-radius: 6px;
+    height: 49px;
+    width: 380px;
+    border: none;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+span {
+    text-align: right;
+    padding-right: 50px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 87, 255, 1);
+}
+
+.submit {
+    width: 164px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 46px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(0, 117, 255, 1);
+    color: #fff;
+    font-size: 18px;
+
+}
+
+::placeholder {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+input[type="password"]:invalid:not(:focus) {
+    background-color: rgba(255, 234, 234, 1);
+    background-image: url('../login_html/assets/iconmonstr-triangle-4-240.png');
+    background-repeat: no-repeat;
+    background-position: 95% 13px;
+    background-size: 25px;
+}
+
+input[type="password"]:invalid:not(:focus)::placeholder {
+    color: #FF0000;
+}
+
+hr {
+    width: 30%;
+    background-color: #525252CC;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hr-text {
+    text-align: center;
+    padding: 0%;
+    color: #525252CC;
+    font-size: 14px;
+}
+
+.connect {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.forgot {
+    margin-top: 7px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 25px;
+}
+
+a>img {
+    width: 32px;
+    padding: 0 15px;
+}
+
+.signup {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 7vh;
+    margin-left: 1vw;
+}
+
+.signup>span {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 0;
+}
+
+.signup>span>a {
+    color: #1E85FF;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 22px;
+    background: #fff;
+    margin-top: 105px;
+}
+
+.row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.col-1 {
+    text-align: center;
+    padding: 34px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.col-2 {
+    text-align: left;
+    /* padding: 34px 140px; */
+    justify-content: center;
+}
+
+.login_image {
+    /* width: 799px; */
+    width: 75%;
+    min-width: 550px;
+    margin: 0 10px;
+    border-radius: 22px;
+    /*     */
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .container {}
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    /* .col-1 {
+        grid-column: 845px;
+    }
+
+    .col-2 {
+        grid-column: 699px;
+    } */
+
+
+}
+
+
+
+/* For Tablets  */
+@media (max-width:786px) {
+
+    .row {
+        /* display: inline-block; */
+    }
+
+    .container {
+        margin-bottom: 10vh;
+
+
+    }
+
+    .col-1 {
+        /* padding-left: 0; */
+    }
+
+    .col-2 {
+        /* padding: 20px 0; */
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .login_image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .signup {
+        margin-bottom: 10vh;
+    }
+}
+
+
+/* For Mobile Phones */
+@media (max-width:480px) {
+    /* .container {
+        margin-bottom: 10vh;
+
+    }
+
+    .row {
+        display: inline-block;
+    }
+
+    .login_image {
+        width: 70%;
+        height: 100%;
+    }
+
+
+    .col-1 {
+        padding-left: 0;
+    }
+
+    .col-2 {
+        padding: 20px 0;
+    } */
+
+    span {
+        padding: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+
+
+    .signup {
+        margin-bottom: 10vh;
+    }
+}
+
+/* For Laptops/Desktop */
+/* @media (min-width:1025px){} */
